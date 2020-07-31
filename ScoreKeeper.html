@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ScoreKeeper</title>
-    <link rel="stylesheet" href="ScoreKeeper.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="ScoreKeeper.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><span id="p1Display">0</span> ~ <span id="p2Display">0</span></h1>
+
+      <p id="winningTarget">Playing to : <span id="winningScoreDisplay">0</span></p>
+        
+      <div class="playerGoalInput">
+        <input type="number" />
+      </div>
+
+      <div class="playerButtons">
+        <button id="p1" class="playerButton">Player One</button>
+        <button id="p2" class="playerButton">Player Two</button>
+      </div>
+
+      <div class="resetButton">
+        <button id="reset">Reset</button>
+      </div>
+      
+    </div>
     <script src="ScoreKeeper.js"></script>
-</body>
+  </body>
 </html>
